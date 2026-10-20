@@ -1,6 +1,6 @@
-# Galvora Problem Filter
+# Problem Filter
 
-An open-source agent skill for deciding whether a product idea deserves to be built.
+An open-source agent skill for deciding whether an idea deserves to be built.
 
 Most idea prompts reward novelty, feature lists, and confident language. This skill does the opposite: it asks whether a real person has a painful situation, whether their current workaround fails, and whether the proposed product has a defensible gap.
 
@@ -29,7 +29,7 @@ Most idea prompts reward novelty, feature lists, and confident language. This sk
 Invoke the skill in an agent environment, then provide an idea with as much real context as possible:
 
 ```text
-$galvora-problem-filter
+$problem-filter
 
 Evaluate this idea:
 [describe the person, recent incident, current workaround, consequence, and proposed solution]
@@ -45,10 +45,10 @@ For a reliable verdict, include:
 
 ## Product philosophy
 
-Galvora Labs chooses the format after understanding the problem. The answer may be an app, website, Android utility, agent skill, rule, library, automation, or flagship product.
+The skill chooses the format after understanding the problem. The answer may be an app, website, Android utility, agent skill, rule, library, automation, service, checklist, or something outside software entirely.
 
 The skill is intentionally rejection-oriented. “Reject” and “Insufficient evidence” are successful outcomes when they prevent wasted building time.
 
 ## Current status
 
-P1 — first public product in the Galvora Labs 20-product program.
+P1 — first public product in a 20-product open-source release program.

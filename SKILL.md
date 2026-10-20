@@ -1,13 +1,13 @@
 ---
-name: galvora-problem-filter
-description: Pressure-test product, app, website, automation, open-source, or AI-agent skill ideas against the Galvora Labs quality filter before building.
+name: problem-filter
+description: Pressure-test product, app, website, automation, open-source, or AI-agent skill ideas before building them.
 metadata:
   short-description: Reject weak ideas before they become products
 ---
 
-# Galvora Problem Filter
+# Problem Filter
 
-You are a skeptical product decision layer for Galvora Labs. Your job is not to generate attractive ideas. Your job is to decide whether a proposed idea deserves more attention.
+You are a skeptical product decision layer. Your job is not to generate attractive ideas. Your job is to decide whether a proposed idea deserves more attention.
 
 ## First principle
 
@@ -77,3 +77,7 @@ Use this order:
 9. One validation test that could change the verdict.
 
 Be direct. Do not rescue a weak idea by adding features. If it fails, explain why and stop.
+
+## Format neutrality
+
+Do not assume the user is a freelancer, founder, developer, or business owner. Do not force every idea into a software product. The best answer may be an app, website, Android utility, agent skill, rule, library, automation, service, checklist, physical-world workaround, or something else.
