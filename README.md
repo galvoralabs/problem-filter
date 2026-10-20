@@ -38,22 +38,54 @@ The skill also shows the evidence quality, filter scores, competitive gap, small
 
 ## Use it
 
-Invoke the skill in an agent environment, then provide an idea with as much real context as possible:
+Choose the path that matches your agent. The simplest path is to share this repository with the agent and ask it to read `SKILL.md` before evaluating an idea.
+
+### Download the skill
+
+[Download `SKILL.md`](https://raw.githubusercontent.com/Javeed726/problem-filter/main/SKILL.md) and place it in the skill directory your agent uses. The file is self-contained and does not require an API key, database, or hosted service.
+
+### Native Agent Skills
+
+Copy the repository's `SKILL.md` into one of these locations:
+
+| Agent | Project path | Example request |
+| --- | --- | --- |
+| OpenAI Codex | `.codex/skills/problem-filter/SKILL.md` | `Use problem-filter to evaluate this idea.` |
+| Claude Code | `.claude/skills/problem-filter/SKILL.md` | `/problem-filter` |
+| Google Antigravity | `.agents/skills/problem-filter/SKILL.md` | `Use problem-filter before we build this.` |
+
+### Cursor
+
+Copy both included adapters into your project:
 
 ```text
-$problem-filter
-
-Evaluate this idea:
-[describe the person, recent incident, current workaround, consequence, and proposed solution]
+adapters/cursor/problem-filter.mdc  ->  .cursor/rules/problem-filter.mdc
+adapters/cursor/problem-filter.md   ->  .cursor/commands/problem-filter.md
 ```
 
-For a reliable verdict, include:
+Then apply the rule, or run `/problem-filter` from Cursor's command palette.
 
-1. Who experienced the problem?
-2. What happened recently?
-3. What did they do instead?
-4. What did it cost them?
-5. What existing tools did they try?
+### Any other agent
+
+Share the repository, ask the agent to read `SKILL.md`, and use a request like:
+
+```text
+Read SKILL.md from this repository. Apply it to the idea below.
+Do not skip the evidence check or soften the verdict.
+
+Idea: [describe the product, app, automation, skill, or service]
+Context: [who experienced the problem, what happened recently, current workaround,
+cost or consequence, and tools already tried]
+```
+
+For the strongest result, provide:
+
+1. The person who experienced the problem.
+2. A recent incident, not only a general annoyance.
+3. The current workaround and where it fails.
+4. The cost, risk, delay, or emotional consequence.
+5. Existing products or workflows already tried.
+6. The smallest outcome the first version should deliver.
 
 ## Compatibility
 
@@ -75,8 +107,8 @@ The skill is intentionally rejection-oriented. “Reject” and “Insufficient 
 
 P1 — first public product in a 20-product open-source release program.
 
-## Landing page
+## Demo
 
-Open [site/index.html](site/index.html) locally. It is a static product page with a live browser-only demo, proof examples, the compatibility matrix, and installation paths.
+[Open the live demo](https://problem-filter.galvoralabs.com) to try the browser-only decision console, inspect the proof examples, and see the supported agent formats.
 
-See [DEPLOYMENT.md](DEPLOYMENT.md) for the exact GitHub push and landing-page publishing steps.
+You can also open [site/index.html](site/index.html) locally. The demo page is separate from the skill runtime; the actual reusable product is `SKILL.md`.
