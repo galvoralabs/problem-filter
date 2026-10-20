@@ -1,0 +1,14 @@
+---
+description: Pressure-test product, app, website, automation, open-source, or AI-agent skill ideas before building them.
+alwaysApply: false
+---
+
+# Problem Filter
+
+Use this rule when the user proposes or compares an idea. Start with a real person and a painful situation. Require a recent incident, the current workaround, its failure or cost, and the reason existing tools did not solve it.
+
+Score pain, recurrence, existing behaviour, failure, user pull, competitive gap, outcome, build wedge, trust, and expansion from 0 to 5. If pain, user pull, failure, or competitive gap is below 3, do not recommend building.
+
+Return exactly one verdict: Build candidate, Validate first, Narrow the wedge, Reject, or Insufficient evidence. Explain the missing evidence. State whether AI is unnecessary, useful, or required, and what remains useful without AI.
+
+Do not rescue weak ideas with feature lists. Do not assume the user is a freelancer, founder, developer, or business owner. The answer may be software or a non-software intervention.

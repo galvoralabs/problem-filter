@@ -24,6 +24,18 @@ Most idea prompts reward novelty, feature lists, and confident language. This sk
 - Crowded clones with better branding as the only advantage
 - Products that need many features before becoming useful
 
+## The decision output
+
+Every evaluation returns one direct verdict:
+
+- **Build candidate**
+- **Validate first**
+- **Narrow the wedge**
+- **Reject**
+- **Insufficient evidence**
+
+The skill also shows the evidence quality, filter scores, competitive gap, smallest credible version, AI role, and the one validation test that could change the verdict.
+
 ## Use it
 
 Invoke the skill in an agent environment, then provide an idea with as much real context as possible:
@@ -43,6 +55,16 @@ For a reliable verdict, include:
 4. What did it cost them?
 5. What existing tools did they try?
 
+## Compatibility
+
+Problem Filter uses the open Agent Skills format. It includes native installation guidance for OpenAI Codex, Claude Code, and Google Antigravity, plus Cursor rule and command adapters.
+
+See [COMPATIBILITY.md](COMPATIBILITY.md) for exact locations and official references.
+
+## Proof
+
+See [TEST-REPORT.md](TEST-REPORT.md) for six behavioural tests using real ideas from the discovery process. The skill rejected generic document tooling and waiting-list products, requested validation for uncertain ideas, and refused to approve an icon pack without evidence.
+
 ## Product philosophy
 
 The skill chooses the format after understanding the problem. The answer may be an app, website, Android utility, agent skill, rule, library, automation, service, checklist, or something outside software entirely.
@@ -52,3 +74,9 @@ The skill is intentionally rejection-oriented. “Reject” and “Insufficient 
 ## Current status
 
 P1 — first public product in a 20-product open-source release program.
+
+## Landing page
+
+Open [site/index.html](site/index.html) locally. It is a static product page with a live browser-only demo, proof examples, the compatibility matrix, and installation paths.
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for the exact GitHub push and landing-page publishing steps.
