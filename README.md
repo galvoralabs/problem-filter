@@ -42,7 +42,7 @@ Choose the path that matches your agent. The simplest path is to share this repo
 
 ### Download the skill
 
-[Download `SKILL.md`](https://raw.githubusercontent.com/Javeed726/problem-filter/main/SKILL.md) and place it in the skill directory your agent uses. The file is self-contained and does not require an API key, database, or hosted service.
+[Download `SKILL.md`](https://raw.githubusercontent.com/galvoralabs/problem-filter/main/SKILL.md) and place it in the skill directory your agent uses. The file is self-contained and does not require an API key, database, or hosted service.
 
 ### Native Agent Skills
 
