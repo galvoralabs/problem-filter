@@ -38,7 +38,7 @@ The repository entry point should be:
 ## 5. Release checklist
 
 - Confirm the repository is public.
-- Replace the landing page's temporary GitHub link with the final repository URL.
+- Confirm the landing page's GitHub link opens the final repository.
 - Open the landing page at desktop and mobile widths.
 - Run the six test cases in `TEST-REPORT.md` again after any skill change.
 - Tag the first public version after the README, skill, adapters, and proof report are pushed together.
