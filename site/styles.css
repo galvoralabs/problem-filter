@@ -69,7 +69,7 @@ textarea:focus { border-color: var(--accent); }
 .console-button { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 13px 16px; border: 1px solid var(--accent); border-radius: var(--radius-control); color: var(--accent-ink); background: var(--accent); font-weight: 800; cursor: pointer; transition: transform .2s ease, filter .2s ease; }
 .console-button:hover { filter: brightness(1.08); }
 .console-result { margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--line); animation: result-in .45s ease both; }
-.console-result.is-updating { animation: result-out .18s ease both; }
+.console-result.is-updating { animation: result-in .24s ease both; }
 .console-result strong { display: block; margin: 8px 0 8px; font-size: 1.5rem; letter-spacing: -.04em; }
 .console-result p { margin-bottom: 0; color: var(--muted); font-size: .86rem; }
 .result-divider { height: 1px; margin: 18px 0 13px; background: var(--line); }

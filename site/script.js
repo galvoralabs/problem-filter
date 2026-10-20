@@ -58,6 +58,7 @@ function renderShowcase(index) {
   resultPanel.classList.remove("is-updating");
   void resultPanel.offsetWidth;
   resultPanel.classList.add("is-updating");
+  window.setTimeout(() => resultPanel.classList.remove("is-updating"), 240);
 }
 
 function setTheme(theme) {
